@@ -2,22 +2,22 @@ package HomeWork2;
 
 public class Main {
     public static void main(String[] args) {
-        Variables learn = new Variables();
-        learn.setNum1((byte) 10);
-        byte res1 = learn.getNum1();
-        System.out.println(res1);
-
-        learn.setNum2((short) 129);
-        short res2 = learn.getNum2();
-        System.out.println(res2);
-
-        learn.setNum3((int) 500);
-        int res3 = learn.getNum3();
-        System.out.println(res3);
-
-        learn.setNum4((long) 5000);
-        long res4 = learn.getNum4();
-        System.out.println(res4);
+        Variables learn = new Variables((byte) 10, (short) 129, (int) 500, (long) 5000 );
+//        learn.setNum1((byte) 10);
+//        byte res1 = learn.getNum1();
+//        System.out.println(res1);
+//
+//        learn.setNum2((short) 129);
+//        short res2 = learn.getNum2();
+//        System.out.println(res2);
+//
+//        learn.setNum3((int) 500);
+//        int res3 = learn.getNum3();
+//        System.out.println(res3);
+//
+//        learn.setNum4((long) 5000);
+//        long res4 = learn.getNum4();
+//        System.out.println(res4);
 
         learn.setNum5((float) 1.12);
         float res5 = learn.getNum5();
@@ -27,7 +27,7 @@ public class Main {
         double res6 = learn.getNum6();
         System.out.println(res6);
 
-        learn.setNum7((char) 1);
+        learn.setNum7((char) 'A');
         char res7 = learn.getNum7();
         System.out.println(res7);
 
@@ -71,5 +71,9 @@ public class Main {
         learn.setNum16((Boolean) true);
         Boolean res17 = learn.getNum16();
         System.out.println(res17);
+
+        System.out.println(Integer.sum(learn.getNum11(), learn.getNum3()));
+        System.out.println(Integer.toHexString(learn.getNum11()));
     }
+
 }

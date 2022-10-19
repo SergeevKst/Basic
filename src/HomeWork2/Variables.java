@@ -171,5 +171,11 @@ public class Variables {
     }
 
 
-
+    public Variables( byte num1, short num2, int num3, long num4 ){
+        this.num1=num1;
+        this.num2=num2;
+        this.num3=num3;
+        this.num4=num4;
+        System.out.println("Primetives created: byte "+ this.num1+", short: "+ this.num2+", int: "+ this.num3+", long: "+this.num4 );
+    }
 }
