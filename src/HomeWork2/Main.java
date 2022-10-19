@@ -40,12 +40,36 @@ public class Main {
         System.out.println(res9);
 
 
-        learn.setNum9(Byte 12);
+        learn.setNum9((byte) 12);
         Byte res10 = learn.getNum9();
         System.out.println(res10);
 
-        learn.setNum10(Short 110);
+        learn.setNum10((short) 110);
         Short res11 = learn.getNum10();
         System.out.println(res11);
+
+        learn.setNum11((Integer) 110);
+        Integer res12 = learn.getNum11();
+        System.out.println(res12);
+
+        learn.setNum12((Long) 110000L);
+        Long res13 = learn.getNum12();
+        System.out.println(res13);
+
+        learn.setNum13((Float) 11.2f);
+        Float res14 = learn.getNum13();
+        System.out.println(res14);
+
+        learn.setNum14((Double) 11.222);
+        Double res15 = learn.getNum14();
+        System.out.println(res15);
+
+        learn.setNum15((Character) 'A');
+        Character res16 = learn.getNum15();
+        System.out.println(res16);
+
+        learn.setNum16((Boolean) true);
+        Boolean res17 = learn.getNum16();
+        System.out.println(res17);
     }
 }
