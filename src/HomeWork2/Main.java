@@ -74,6 +74,17 @@ public class Main {
 
         System.out.println(Integer.sum(learn.getNum11(), learn.getNum3()));
         System.out.println(Integer.toHexString(learn.getNum11()));
+        System.out.println(Integer.toHexString(learn.getNum3()));
+        int bad1 = 150;
+        System.out.println(Integer.toString(bad1));
+        Integer w = 10;
+        String str10 = Integer.toHexString(w);
+        System.out.println(str10);
+        Character bad = 'A', bad2 ='B';
+        System.out.println(Character.compare(bad,bad2));
+        char blame = '\u262d';
+        System.out.println(blame);
     }
-
 }
+
+
