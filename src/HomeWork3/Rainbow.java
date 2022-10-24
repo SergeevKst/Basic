@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 public class Rainbow {
     static Scanner scan = new Scanner(System.in);
-    private static final int NUMBER = scan.nextInt();
-
     public String getColor() {
-        switch (NUMBER) {
+        int number1 = scan.nextInt();
+        switch (number1) {
             case 1:
                 String str = "Red";
                 return str;
@@ -30,39 +29,45 @@ public class Rainbow {
                 String str6 = "Violet";
                 return str6;
             default:
-                System.out.println("Number is not corrected, please enter corrected number");
+                String str7="Number is not corrected, please enter corrected number";
+                return str7;
+        }
+    }
+
+    public String getTwoColor() {
+        int number2 = scan.nextInt();
+        if (number2 == 1) {
+            String str = "Red-" +getColor();
+            return str;
+        } else if (number2 == 2) {
+            String str = "Orange-" + getColor();
+            return str;
+        } else if (number2 == 3) {
+            String str ="Yellow-"+ getColor() ;
+            return str;
+        } else if (number2 == 4) {
+            String str = "Green-"+getColor() ;
+            return str;
+        } else if (number2 == 5) {
+            String str ="Cyan-"+ getColor() ;
+            return str;
+        } else if (number2 == 6) {
+            String str = "Blue-" +getColor();
+            return str;
+        } else if (number2 == 7) {
+            String str ="Violet-"+ getColor() ;
+            return str;
+        } else if (number2 >= 8||number2<1) {
+            String str ="Number is not corrected, please enter corrected number";
+            return str;
         }
         String str = "";
         return str;
     }
-
-    public String getTwoColor() {
-        int NUMBER2 = scan.nextInt();
-        if (NUMBER2 == 1) {
-            String str = getColor() + "-Red";
-            return str;
-        } else if (NUMBER2 == 2) {
-            String str = getColor() + "-Orange";
-            return str;
-        } else if (NUMBER2 == 3) {
-            String str = getColor() + "-Yellow";
-            return str;
-        } else if (NUMBER2 == 4) {
-            String str = getColor() + "-Green";
-            return str;
-        } else if (NUMBER2 == 5) {
-            String str = getColor() + "-Cyan";
-            return str;
-        } else if (NUMBER2 == 6) {
-            String str = getColor() + "-Blue";
-            return str;
-        } else if (NUMBER2 == 7) {
-            String str = getColor() + "-Violet";
-            return str;
-        } else if (NUMBER2 >= 8) {
-            System.out.println("Number is not corrected, please enter corrected number");
-        }
-        String str = "";
-        return str;
+    public Rainbow(){
+        System.out.println("If you want to know which color goes under which number, enter the number at 1 by 7 for example: 2 ");
+        System.out.println("You chose: " + getColor());
+        System.out.println("If you want know a mix of two color, enter two number at 1 by 7 for example: 2 2 ");
+        System.out.println("You chose: " + getTwoColor());
     }
 }

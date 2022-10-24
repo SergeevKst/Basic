@@ -80,8 +80,8 @@ public class Main {
         Integer w = 10;
         String str10 = Integer.toHexString(w);
         System.out.println(str10);
-        Character bad = 'A', bad2 ='B';
-        System.out.println(Character.compare(bad,bad2));
+        Character bad = 'A', bad2 = 'B';
+        System.out.println(Character.compare(bad, bad2));
         char blame = '\u262d';
         System.out.println(blame);
     }
