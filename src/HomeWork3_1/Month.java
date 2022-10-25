@@ -8,23 +8,17 @@ public class Month {
     public String getNumber() {
         int number = scann.nextInt();
         if (1 <= number && number <= 2 || number == 12) {
-            String str = "Winter";
-            return str;
+            return "Winter";
         } else if (3 <= number && number <=5) {
-            String str = "Spring";
-            return str;
+            return "Spring";
         }else if (6 <= number && number <=8) {
-            String str = "Summer";
-            return str;
+            return "Spring";
         }else if (9 <= number && number <=11) {
-            String str = "Autumn";
-            return str;
+            return "Autumn";
     }else if (1>number||number>12){
-            String str= "Create new month number: ";
-            return str;
+            return "Create new month number: ";
         }
-        String str="";
-        return str;
+        return "";
     }
 public Month(){
     System.out.print("Enter number month: ");
