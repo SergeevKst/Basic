@@ -116,6 +116,24 @@ public class Cat {
         return Objects.equals(name, cat.name);
     }
 
+    public void start() {
+        while (true) {
+            System.out.println("If you want to check the work cycle: (while) enter-1; (for) enter-2; (do while) enter-3; (for each) enter-4:");
+            Scanner scanner = new Scanner(System.in);
+            int number = scanner.nextInt();
+            if (number == 1) {
+                createdCats();
+            } else if (number == 2) {
+                setCats();
+            } else if (number == 3) {
+                setCat();
+            } else if (number == 4) {
+                setForCat();
+            } else if (number < 1 || number > 4) {
+                System.out.println("Error");
+            }
 
+        }
+
+    }
 }
-
