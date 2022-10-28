@@ -25,7 +25,6 @@ public class Cat {
     public int creatAge() {
         Random random = new Random();
         int index = random.nextInt(24 + 1);
-        index++;
         return index;
     }
 
