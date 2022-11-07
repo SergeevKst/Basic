@@ -1,9 +1,9 @@
-package HomeWork6.container;
+package homework6.container;
 
-public class BigConuse extends BigCont{
+public class BigConuse extends BigContainer{
     @Override
     public double getMass() {
-        double massHeightConuse = (getDendity()*Math.PI* diametrHeight *creatHeight())/3;
-        return massHeightConuse;
+        return (getDendity()*Math.PI* diametrHeight *creatHeight())/3;
     }
 }
+

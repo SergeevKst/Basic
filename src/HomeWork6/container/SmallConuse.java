@@ -1,9 +1,9 @@
-package HomeWork6.container;
+package homework6.container;
 
-public class SmallConuse extends SmallCont{
+public class SmallConuse extends SmallContainer {
     @Override
     public double getMass() {
-        double massSmallConuse = (getDendity()*Math.PI* diametrSmall *creatHeight())/3;
-        return massSmallConuse;
+        return (getDendity()*Math.PI* diametrSmall *creatHeight())/3;
     }
 }
+

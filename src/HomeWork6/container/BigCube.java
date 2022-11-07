@@ -1,9 +1,8 @@
-package HomeWork6.container;
+package homework6.container;
 
-public class BigCube extends BigCont{
+public class BigCube extends BigContainer{
     @Override
     public double getMass() {
-        double massHeightCube = getDendity()*Math.pow(diametrHeight,3);
-        return massHeightCube;
+        return getDendity()*Math.pow(diametrHeight,2)*creatHeight();
     }
 }

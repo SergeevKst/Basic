@@ -1,9 +1,9 @@
-package HomeWork6.container;
+package homework6.container;
 
-public class SmallCelindr extends SmallCont{
+public class SmallCelindr extends SmallContainer {
     @Override
     public double getMass() {
-        double massSmallCelindr = getDendity()*Math.PI* diametrSmall *creatHeight();
-        return massSmallCelindr;
+        return getDendity()*Math.PI* diametrSmall *creatHeight();
     }
 }
+

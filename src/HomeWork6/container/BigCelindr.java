@@ -1,9 +1,9 @@
-package HomeWork6.container;
+package homework6.container;
 
-public class BigCelindr extends BigCont{
+public class BigCelindr extends BigContainer{
     @Override
     public double getMass() {
-        double massHeightCelindre = getDendity()*Math.PI* diametrHeight *creatHeight();
-        return massHeightCelindre;
+        return getDendity()*Math.PI* diametrHeight *creatHeight();
     }
 }
+

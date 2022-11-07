@@ -4,22 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a6f23c9-a06d-43f2-8493-ffed9fc0b60f" name="Changes" comment="homeworktask5">
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/container/BigCelindr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/container/BigCont.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/container/BigConuse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/container/BigCube.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/container/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/container/SmallCelindr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/container/SmallCont.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/container/SmallConuse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/container/SmallCube.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/deck/Deck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/menu/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/port/Port.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/runner/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork6/ship/Ship.java" afterDir="false" />
+    <list default="true" id="1a6f23c9-a06d-43f2-8493-ffed9fc0b60f" name="Changes" comment="homeworktask6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/container/BigCelindr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/container/BigCelindr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/container/BigCont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/container/BigCont.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/container/BigConuse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/container/BigConuse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/container/BigCube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/container/BigCube.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/container/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/container/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/container/SmallCelindr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/container/SmallCelindr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/container/SmallCont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/container/SmallCont.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/container/SmallConuse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/container/SmallConuse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/container/SmallCube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/container/SmallCube.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/port/Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/port/Port.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork6/runner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork6/runner/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="task-5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,17 +51,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Java Core&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "F:/Basic/src",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

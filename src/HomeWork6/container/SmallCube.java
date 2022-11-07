@@ -1,9 +1,9 @@
-package HomeWork6.container;
+package homework6.container;
 
-public class SmallCube extends SmallCont{
+public class SmallCube extends SmallContainer {
     @Override
     public double getMass() {
-        double massSmalltCube = getDendity()*Math.pow(diametrSmall,3);
-        return massSmalltCube;
+        return getDendity()*Math.pow(diametrSmall,2)*creatHeight();
     }
 }
+
