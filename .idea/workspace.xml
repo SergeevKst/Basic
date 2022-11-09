@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a6f23c9-a06d-43f2-8493-ffed9fc0b60f" name="Changes" comment="classktaskphone6">
-      <change afterPath="$PROJECT_DIR$/src/home/work7/factory/body/FactoryBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home/work7/factory/body_parts/Body.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home/work7/factory/head/FactoryHead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home/work7/factory/head_parts/Head.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home/work7/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home/work7/menu/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home/work7/robot/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home/work7/technology/Technology.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1a6f23c9-a06d-43f2-8493-ffed9fc0b60f" name="Changes" comment="robot.homework7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666985594821</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="robot.homework7">
+      <created>1668030817780</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668030817780</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,7 +161,8 @@
     <MESSAGE value="homeworktask1" />
     <MESSAGE value="homeworktask3" />
     <MESSAGE value="homeworktask4" />
-    <option name="LAST_COMMIT_MESSAGE" value="homeworktask4" />
+    <MESSAGE value="robot.homework7" />
+    <option name="LAST_COMMIT_MESSAGE" value="robot.homework7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
