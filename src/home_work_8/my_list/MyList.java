@@ -24,4 +24,7 @@ public interface MyList<T> {
     T set(int index, T value);
 
     int indexOf(Object value);
+
+    void clear();
+
 }

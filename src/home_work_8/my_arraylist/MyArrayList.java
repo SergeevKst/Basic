@@ -8,46 +8,58 @@ import java.util.Collection;
 public class MyArrayList<T> implements MyList<T> {
 
 
-    private int capacity;
-    private Object[] more;
+    private static final int DEFAULT_CAPACITY = 10;
+    private int variableCapacity;
+
+    private Object[] defaultLists;
     private int count = 0;
 
     public MyArrayList() {
-        this.more = new Object[10];
+        this.defaultLists = new Object[10];
     }
 
     public MyArrayList(int capacity) {
-        this.capacity = capacity;
-        this.more = new Object[this.capacity];
+        this.variableCapacity = capacity;
+        this.defaultLists = new Object[capacity];
     }
 
-    public MyArrayList(MyList<?extends T> col) {
-
-        this.more = more;
+    public MyArrayList(Collection<? extends T> col) {
+        Object[] array = col.toArray();
+        this.defaultLists = new Object[DEFAULT_CAPACITY];
+        for (int i = 0; i < defaultLists.length; i++) {
+            if (i == array.length) {
+                Object[] lists = new Object[array.length];
+                System.arraycopy(array, 0, lists, 0, array.length);
+                defaultLists = lists;
+            }
+        }
     }
 
     @Override
     public int size() {
-        for (Object size : more) {
+        int count1 = 0;
+        for (Object size : defaultLists) {
             if (size != null) {
-                count++;
+                count1++;
             }
         }
-        return count;
+        return count1;
     }
 
     @Override
     public boolean add(int index, T value) {
-        for (int i = 0; i < more.length; i++) {
-            if (i == index && more[i] == null) {
-                more[i] = value;
+        for (int i = 0; i < defaultLists.length; i++) {
+            if (i == index && defaultLists[i] == null) {
+                defaultLists[i] = value;
+                count++;
                 return true;
-            } else if (i == index && more[i] != null) {
-                Object[] list = new Object[more.length + 1];
-                System.arraycopy(more, 0, list, 0, index);
+            } else if (i == index && defaultLists[i] != null) {
+                Object[] list = new Object[defaultLists.length + 1];
+                System.arraycopy(defaultLists, 0, list, 0, index);
                 list[index] = value;
-                System.arraycopy(more, index, list, index + 1, more.length - index);
-                more = list;
+                System.arraycopy(defaultLists, index, list, index + 1, defaultLists.length - index);
+                defaultLists = list;
+                count++;
                 return true;
             }
         }
@@ -56,7 +68,7 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public boolean isEmpty() {
-        for (Object o : more) {
+        for (Object o : defaultLists) {
             if (count != 0 || o == null) return false;
         }
         return true;
@@ -64,7 +76,7 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public boolean contains(Object value) {
-        for (Object o : more) {
+        for (Object o : defaultLists) {
             if (o == value) {
                 return true;
             }
@@ -74,12 +86,13 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public boolean add(T value) {
-        for (int i = 0; i < more.length; i++) {
-            if (i == more.length - 1) {
-                Object[] list = new Object[more.length + 1];
-                System.arraycopy(more, 0, list, 0, more.length);
-                list[more.length] = value;
-                more = list;
+        for (int i = 0; i < defaultLists.length; i++) {
+            if (i == defaultLists.length - 1) {
+                Object[] list = new Object[defaultLists.length + 1];
+                System.arraycopy(defaultLists, 0, list, 0, defaultLists.length);
+                list[defaultLists.length] = value;
+                defaultLists = list;
+                count++;
                 return true;
             }
         }
@@ -88,13 +101,14 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public boolean remove(Object value) {
-        for (int i = 0; i < more.length; i++) {
+        for (int i = 0; i < defaultLists.length; i++) {
 
-            if (more[i] == (value)) {
-                Object[] list = new Object[more.length - 1];
-                System.arraycopy(more, 0, list, 0, i);
-                System.arraycopy(more, i + 1, list, i, more.length - i - 1);
-                more = list;
+            if (defaultLists[i] == (value)) {
+                Object[] list = new Object[defaultLists.length - 1];
+                System.arraycopy(defaultLists, 0, list, 0, i);
+                System.arraycopy(defaultLists, i + 1, list, i, defaultLists.length - i - 1);
+                defaultLists = list;
+                count--;
                 return true;
             }
         }
@@ -107,12 +121,12 @@ public class MyArrayList<T> implements MyList<T> {
         if (col.length == 0) {
             return false;
         }
-        for (int i = 0; i < more.length; i++) {
+        for (int i = 0; i < defaultLists.length; i++) {
             if (i == col.length) {
-                Object[] list = new Object[more.length + col.length];
-                System.arraycopy(more, 0, list, 0, more.length);
-                System.arraycopy(col, 0, list, more.length, col.length);
-                more = list;
+                Object[] list = new Object[defaultLists.length + col.length];
+                System.arraycopy(defaultLists, 0, list, 0, defaultLists.length);
+                System.arraycopy(col, 0, list, defaultLists.length, col.length);
+                defaultLists = list;
                 return true;
             }
         }
@@ -121,9 +135,9 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public T get(int index) {
-        for (int i = 0; i < more.length; i++) {
-            if (i == index && more[i] != null) {
-                return (T) more[i];
+        for (int i = 0; i < defaultLists.length; i++) {
+            if (i == index && defaultLists[i] != null) {
+                return (T) defaultLists[i];
             }
         }
         return null;
@@ -131,13 +145,14 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public T remove(int index) {
-        for (int i = 0; i < more.length; i++) {
+        for (int i = 0; i < defaultLists.length; i++) {
             if (i == (index)) {
-                Object value = more[i];
-                Object[] list = new Object[more.length - 1];
-                System.arraycopy(more, 0, list, 0, i);
-                System.arraycopy(more, i + 1, list, i, more.length - i - 1);
-                more = list;
+                Object value = defaultLists[i];
+                Object[] list = new Object[defaultLists.length - 1];
+                System.arraycopy(defaultLists, 0, list, 0, i);
+                System.arraycopy(defaultLists, i + 1, list, i, defaultLists.length - i - 1);
+                defaultLists = list;
+                count--;
                 return (T) value;
             }
         }
@@ -146,23 +161,34 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public T set(int index, T value) {
-        for (int i = 0; i < more.length; i++) {
-            if (index == i) {
-                Object value2 = more[i];
-                more[i] = value;
+        String str = "lists is empty";
+        for (int i = 0; i < defaultLists.length; i++) {
+            if (index == i && defaultLists[i] != null) {
+                Object value2 = defaultLists[i];
+                defaultLists[i] = value;
                 return (T) value2;
             }
         }
-        return null;
+        return (T) str;
     }
 
     @Override
     public int indexOf(Object value) {
-        for (int i = 0; i < more.length; i++) {
-            if (more[i] == value) {
+        for (int i = 0; i < defaultLists.length; i++) {
+            if (defaultLists[i] == value) {
                 return i;
             }
         }
         return -1;
     }
+
+    @Override
+    public void clear() {
+        for (int i = 0; i < defaultLists.length; i++) {
+            if (defaultLists[i] != null) {
+                defaultLists[i] = null;
+            }
+        }
+    }
+
 }

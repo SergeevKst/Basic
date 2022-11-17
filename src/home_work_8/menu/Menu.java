@@ -2,42 +2,40 @@ package home_work_8.menu;
 
 import home_work_8.my_arraylist.MyArrayList;
 import home_work_8.my_list.MyList;
-import java.util.Collection;
+
 public class Menu {
     public static void start() {
-        MyList<String> array = new MyArrayList<>();
 
-        array.add(1, "Maks");
-        array.add(2, "Kiril");
-        array.add(3, "Misha");
-        array.add(2, "Mis");
+        MyList<String> stringMyLists = new MyArrayList<>();
+
+        stringMyLists.add(1, "Maks");
+        stringMyLists.add(2, "Kiril");
+        stringMyLists.add(3, "Misha");
+        stringMyLists.add(2, "Mis");
 
         String name = "Katy";
         String name1 = "Pety";
 
-        array.add(name);
-        array.add(name1);
+        stringMyLists.add(name);
+        stringMyLists.add(name1);
 
-        array.remove("Mis");
+        stringMyLists.remove("Mis");
 
-        array.contains("Misha");
+        stringMyLists.contains("Misha");
 
-        array.get(2);
+        stringMyLists.get(2);
 
-        array.isEmpty();
+        stringMyLists.isEmpty();
 
-        array.remove(1);
+        stringMyLists.remove(1);
 
-        array.set(2, "Georg");
+        stringMyLists.set(2, "Georg");
 
-        array.indexOf("Nikola");
+        stringMyLists.indexOf("Nikola");
 
-        array.size();
+        stringMyLists.size();
 
-        MyList<String> stringMyList= new MyArrayList<>();
+        stringMyLists.clear();
 
-        stringMyList.add("Clone");
-
-        array.addAll(stringMyList);
     }
 }
