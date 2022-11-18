@@ -1,7 +1,5 @@
 package home_work_8.my_list;
 
-import java.util.Collection;
-
 public interface MyList<T> {
     int size();
 
@@ -15,7 +13,7 @@ public interface MyList<T> {
 
     boolean remove(Object value);
 
-    boolean addAll(Collection<? extends T> value);
+    boolean addAll(MyList<? extends T> value);
 
     T get(int index);
 
@@ -26,5 +24,7 @@ public interface MyList<T> {
     int indexOf(Object value);
 
     void clear();
+
+    Object[] toArray(Object[] value);
 
 }

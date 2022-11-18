@@ -3,8 +3,6 @@ package home_work_8.my_arraylist;
 
 import home_work_8.my_list.MyList;
 
-import java.util.Collection;
-
 public class MyArrayList<T> implements MyList<T> {
 
 
@@ -23,8 +21,8 @@ public class MyArrayList<T> implements MyList<T> {
         this.defaultLists = new Object[capacity];
     }
 
-    public MyArrayList(Collection<? extends T> col) {
-        Object[] array = col.toArray();
+    public MyArrayList(MyList<? extends T> col) {
+        Object[] array = col.toArray(new Object[col.size()]);
         this.defaultLists = new Object[DEFAULT_CAPACITY];
         for (int i = 0; i < defaultLists.length; i++) {
             if (i == array.length) {
@@ -116,8 +114,8 @@ public class MyArrayList<T> implements MyList<T> {
     }
 
     @Override
-    public boolean addAll(Collection<? extends T> value) {
-        Object[] col = value.toArray();
+    public boolean addAll(MyList<? extends T> value) {
+        Object[] col = value.toArray(new Object[value.size()]);
         if (col.length == 0) {
             return false;
         }
@@ -191,4 +189,10 @@ public class MyArrayList<T> implements MyList<T> {
         }
     }
 
+    @Override
+    public Object[] toArray(Object[] value) {
+        Object[] l = new Object[value.length];
+        System.arraycopy(value, 0, l, 0, value.length);
+        return l;
+    }
 }
