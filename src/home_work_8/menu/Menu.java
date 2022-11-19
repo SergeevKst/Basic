@@ -35,10 +35,10 @@ public class Menu {
 
         stringMyLists.size();
 
-        MyList<String>myList2=new MyArrayList<>();
+        MyList<String> myList2 = new MyArrayList<>();
 
-        myList2.add("lok");
-        myList2.add("luffi");
+        myList2.add(0, "lok");
+        myList2.add(1, "luffi");
 
         stringMyLists.addAll(myList2);
 

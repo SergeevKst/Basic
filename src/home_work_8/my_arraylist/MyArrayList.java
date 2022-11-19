@@ -85,10 +85,10 @@ public class MyArrayList<T> implements MyList<T> {
     @Override
     public boolean add(T value) {
         for (int i = 0; i < defaultLists.length; i++) {
-            if (i == defaultLists.length - 1) {
+            if (defaultLists[i] == null) {
                 Object[] list = new Object[defaultLists.length + 1];
                 System.arraycopy(defaultLists, 0, list, 0, defaultLists.length);
-                list[defaultLists.length] = value;
+                list[i] = value;
                 defaultLists = list;
                 count++;
                 return true;
@@ -192,7 +192,7 @@ public class MyArrayList<T> implements MyList<T> {
     @Override
     public Object[] toArray(Object[] value) {
         Object[] l = new Object[value.length];
-        System.arraycopy(value, 0, l, 0, value.length);
+        System.arraycopy(defaultLists, 0, l, 0, value.length);
         return l;
     }
 }
