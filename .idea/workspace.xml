@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a6f23c9-a06d-43f2-8493-ffed9fc0b60f" name="Changes" comment="homeworktask4">
-      <change afterPath="$PROJECT_DIR$/src/HomeWork5/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork5/Matrix.java" afterDir="false" />
+    <list default="true" id="1a6f23c9-a06d-43f2-8493-ffed9fc0b60f" name="Changes" comment="homeworktask8">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work9/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work9/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work9/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work9/UncorrectedAgeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work9/UncorrectedHeightException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work9/UncorrectedRadiusException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work9/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +30,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/home_work9/Menu.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,6 +56,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;F:/Java Core&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
@@ -165,7 +182,9 @@
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.StringBuilder" memberName="maybeLatin1" />
         <PinnedItemInfo parentTag="java.util.Random" memberName="nextNextGaussian" />
+        <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
       </pinned-members>
     </pin-to-top-manager>
   </component>
