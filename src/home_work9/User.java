@@ -1,7 +1,5 @@
 package home_work9;
 
-import home_work9.UncorrectedAgeException;
-
 import java.util.Scanner;
 
 public class User {

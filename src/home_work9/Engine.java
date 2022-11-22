@@ -19,15 +19,11 @@ public class Engine {
 
         screen("Calculation of engine volume");
 
-        screen("Write radius (mm) : ");
-        radius = getScanner();
+        getRadius();
 
-        screen("Write height (mm) : ");
-        height = getScanner();
+        getHeight();
 
-        if (radius > 960 || radius < 70) getUncorrectedRadius();
-        else if (height > 2500 || height < 100) getUncorrectedHeight();
-        else getVolume();
+        getVolume();
     }
 
     private static int getScanner() {
@@ -40,23 +36,31 @@ public class Engine {
         screen("Volume: " + volume + " cm^3.");
     }
 
-    private void getUncorrectedHeight() {
+    private void getHeight() {
+
+        screen("Write height (mm) : ");
+
         try {
-            throw new UncorrectedHeightException(EXCEPTION_HEIGHT);
+            height = getScanner();
+            if (height > 2500 || height < 100) throw new UncorrectedHeightException(EXCEPTION_HEIGHT);
         } catch (UncorrectedHeightException e) {
             System.err.println(e.getMessage());
         } finally {
-            screen(TEXT_END);
+            if (height > 2500 || height < 100) screen(TEXT_END);
         }
     }
 
-    private void getUncorrectedRadius() {
+    private void getRadius() {
+
+        screen("Write radius (mm) : ");
+
         try {
-            throw new UncorrectedRadiusException(EXCEPTION_RADIUS);
+            radius = getScanner();
+            if (radius > 960 || radius < 70) throw new UncorrectedRadiusException(EXCEPTION_RADIUS);
         } catch (UncorrectedRadiusException e) {
             System.err.println(e.getMessage());
         } finally {
-            screen(TEXT_END);
+            if (radius > 960 || radius < 70) screen(TEXT_END);
         }
     }
 
