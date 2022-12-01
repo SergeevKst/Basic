@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a6f23c9-a06d-43f2-8493-ffed9fc0b60f" name="Changes" comment="homeworktask4">
-      <change afterPath="$PROJECT_DIR$/src/HomeWork5/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork5/Matrix.java" afterDir="false" />
+    <list default="true" id="1a6f23c9-a06d-43f2-8493-ffed9fc0b60f" name="Changes" comment="homeworktask9">
+      <change afterPath="$PROJECT_DIR$/resourcesorder/orderlist.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resourcesproduct/productlist.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_10/AdminPassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_10/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_10/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_10/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_10/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_10/SubMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_10/UnCorrectNameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_10/UnValidDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home_work_10/UnValidIndexerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Basic.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -36,17 +48,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Java Core&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "F:/Java Core",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home_work_10.Main" />
+      <module name="Basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="home_work_10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -165,7 +197,9 @@
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.StringBuilder" memberName="maybeLatin1" />
         <PinnedItemInfo parentTag="java.util.Random" memberName="nextNextGaussian" />
+        <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
       </pinned-members>
     </pin-to-top-manager>
   </component>
