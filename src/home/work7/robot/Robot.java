@@ -6,9 +6,9 @@ import home.work7.factory.head.FactoryHead;
 import java.util.StringJoiner;
 
 public class Robot {
-    FactoryBody factoryBody;
-    FactoryHead factoryHead;
-    private String name;
+    private final FactoryBody factoryBody;
+    private final FactoryHead factoryHead;
+    private final String name;
 
     public Robot(FactoryBody body, FactoryHead head, String name) {
         this.factoryBody = body;
